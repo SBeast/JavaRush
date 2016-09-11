@@ -1,44 +1,24 @@
-package JavaRush;
+
 
 public class JavaRush2_13
 
-/* У каждого животного должна быть хозяйка.
-Создайте объект типа Cat(кот), объект типа Dog (собака), объект типа Fish (рыбка) 
-и объект типа Woman.
-Присвойте каждому животному владельца (owner).
+
+/* Р’С‹РІРѕРґ С‚РµРєСЃС‚Р° РЅР° СЌРєСЂР°РЅ
+РќР°РїРёСЃР°С‚СЊ С„СѓРЅРєС†РёСЋ, РєРѕС‚РѕСЂР°СЏ РІС‹РІРѕРґРёС‚ РїРµСЂРµРґР°РЅРЅСѓСЋ СЃС‚СЂРѕРєСѓ (СЃР»РѕРІРѕ) РЅР° СЌРєСЂР°РЅ С‚СЂРё СЂР°Р·Р°, РЅРѕ РІ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРµ.
+РЎР»РѕРІР° РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЂР°Р·РґРµР»РµРЅС‹ РїСЂРѕР±РµР»РѕРј Рё РЅРµ РґРѕР»Р¶РЅС‹ СЃР»РёРІР°С‚СЊСЃСЏ РІ РѕРґРЅРѕ.
 */
 
 {
-	  public static void main(String[] args)
-	  {
-	    Student olga = new Student();
-	    olga.name = "Olga";
-	    olga.age = 21;
+    public static void print3(String s)
+    {
+        //РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
+    	System.out.print(s+" "+s+" ");
+    	System.out.println(s);
 
-	    Student vera = new Student();
-	    vera.name = "Veronika";
-	    vera.age = 15;
-
-	    System.out.println("Olga is " + olga.age);
-	    System.out.println("Vera is " + vera.age);
-
-	    ageSwap(olga, vera);
-
-	    System.out.println("Olga is " + olga.age);
-	    System.out.println("Vera is " + vera.age);
-	  }
-
-	  private static void ageSwap(Student a,
-	                                    Student b)
-	  {
-	    int c = a.age;
-	    a.age = b.age;
-	    b.age = c;
-	  }
-
-	  static class Student
-	  {
-	    String name;
-	    int age;
-	  }
-	}
+    }
+    public static void main(String[] args)
+    {
+        print3("window");
+        print3("file");
+    }
+}

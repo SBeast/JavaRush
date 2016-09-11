@@ -1,29 +1,33 @@
-package JavaRush;
+
 
 public class JavaRush2_8
 
-/* ��� ������ - ��� ����
-������� 3 ������� ���� Dog (������) � ��������� �� ����� "Max", "Bella", "Jack".
+/* Минимум двух чисел
+Написать функцию, которая возвращает минимум из двух чисел.
+Подсказка:
+Нужно написать тело существующей функции min и исправить возвращаемое значение.
 */
 
 {
-    public static void main(String[] args)
+    public static int min(int a, int b)
     {
-        Dog dog1 = new Dog();
-        dog1.name = "Max";
-        Dog dog2 = new Dog();
-        dog2.name = "Bella";
-        Dog dog3 = new Dog();
-        dog3.name = "Jack";
-        //System.out.println(dog1.name);
-        //System.out.println(dog2.name);
-        //System.out.println(dog3.name);
+        //напишите тут ваш код
+    	
+    	      int m2;
+    	      if (a < b)
+    	           m2 = a;
+    	      else
+    	           m2 = b;
 
-        //�������� ��� ��� ���
+    	      return m2;
+    	   
     }
 
-    public static class Dog
+    public static void main(String[] args) throws Exception
     {
-        public String name;
+        System.out.println( min(12,33) );
+        System.out.println( min(-20,0) );
+        System.out.println( min(-10,-20) );
     }
+
 }

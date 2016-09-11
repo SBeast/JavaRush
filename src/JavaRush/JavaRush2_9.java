@@ -1,21 +1,33 @@
-package JavaRush;
+
 
 public class JavaRush2_9
 
-/* Три собаки - это сила
-Создать 3 объекта типа Dog (собака) и присвоить им имена "Max", "Bella", "Jack".
+/* РњРёРЅРёРјСѓРј РґРІСѓС… С‡РёСЃРµР»
+РќР°РїРёСЃР°С‚СЊ С„СѓРЅРєС†РёСЋ, РєРѕС‚РѕСЂР°СЏ РІРѕР·РІСЂР°С‰Р°РµС‚ РјРёРЅРёРјСѓРј РёР· РґРІСѓС… С‡РёСЃРµР».
+РџРѕРґСЃРєР°Р·РєР°:
+РќСѓР¶РЅРѕ РЅР°РїРёСЃР°С‚СЊ С‚РµР»Рѕ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµР№ С„СѓРЅРєС†РёРё min Рё РёСЃРїСЂР°РІРёС‚СЊ РІРѕР·РІСЂР°С‰Р°РµРјРѕРµ Р·РЅР°С‡РµРЅРёРµ.
 */
 
 {
-    public static void main(String[] args)
+    public static int max(int a, int b)
     {
-       
-        System.out.println("Будешь плохо кодить, придет Java и съест твою память");
-        //System.out.println(dog2.name);
-        //System.out.println(dog3.name);
+        //РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
+    	
+    	      int m2;
+    	      if (a > b)
+    	           m2 = a;
+    	      else
+    	           m2 = b;
 
-        //напишите тут ваш код
+    	      return m2;
+    	   
     }
 
-    
+    public static void main(String[] args) throws Exception
+    {
+    	System.out.println( max(10,20) );
+        System.out.println( max(-10,-20) );
+        System.out.println( max(-100,0) );
+    }
+
 }
